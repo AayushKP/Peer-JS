@@ -16,8 +16,8 @@ A simple video conferencing application using **PeerJS** for WebRTC connections,
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/AayushKP/Peer-JS.git
-cd Peer-JS
+git clone https://github.com/your-username/video-conferencing-app.git
+cd video-conferencing-app
 ```
 
 ### 2️⃣ Install dependencies
@@ -25,10 +25,17 @@ cd Peer-JS
 npm install
 ```
 
-### 3️⃣ Start the server
+### 3️⃣ Start the PeerJS server (Port 3001)
+```bash
+peerjs --port 3001
+```
+
+### 4️⃣ Start the main server (Port 3000)
 ```bash
 node server.js
 ```
+
+**Note:** PeerJS runs on port **3001**, and the main server runs on port **3000**.
 
 ---
 
@@ -37,6 +44,7 @@ node server.js
 /video-conferencing-app
 │── /public
 │   ├── script.js
+│   ├── style.css
 │── /views
 │   ├── room.ejs
 │── server.js
